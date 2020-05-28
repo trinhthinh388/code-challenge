@@ -1,0 +1,25 @@
+{
+  "name": "code-challenge",
+  "version": "1.0.0",
+  "description": "A Code Challenge Website",
+  "main": "index.js",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "node": "^14.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "starrt": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trinhthinh388/code-challenge.git"
+  },
+  "author": "Trinh Thinh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trinhthinh388/code-challenge/issues"
+  },
+  "homepage": "https://github.com/trinhthinh388/code-challenge#readme"
+}
