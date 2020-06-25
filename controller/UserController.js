@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const saltRounds = 10;
 
+
 module.exports = {
     get: (req, res)=>{
         User.findAll().then(user => res.json(user));

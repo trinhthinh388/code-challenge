@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const UserController = require('./UserController');
 
-exports.refreshToken =async(req, res)=>{
+exports.refreshToken = async(req, res)=>{
     if(req.headers['authorization'])
     {
         try{

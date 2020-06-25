@@ -18,4 +18,3 @@ exports.validJWTNeeded = (req, res, next) => {
         return res.status(401).send({'error': 'Invalid request'});
     }
 }
-

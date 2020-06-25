@@ -3,6 +3,7 @@
 module.exports = function(app) {
     const UserCtrl = require('../controller/UserController');
     const TokenCtrl = require('../controller/TokenController');
+    const CodeCtrl = require('../controller/CodingController');
     const VerifyUserMiddleware = require('../middleware/user.verify.middleware');
     const ValidationMiddleware = require('../middleware/auth.validation.middleware');
     const PermissionMiddleware = require('../middleware/user.permission.middleware');
@@ -43,4 +44,7 @@ module.exports = function(app) {
 
     app.route('/refresh')
     .get(TokenCtrl.refreshToken);
+
+    app.route('/api/compiler/:language')
+      .post(CodeCtrl.compileCode);
   };
